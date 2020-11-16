@@ -33,7 +33,17 @@ Profile information would be stored on our MySQL database. Our Go server would p
 
 ### **Endpoints**
 - /v1/users : GET users and POST to create a new user
-- /v1/users/{:id} : GET specific user and PATCH to update user account info
+- /v1/users/{:id} : GET specific user and PATCH to update user account info  
+
+- /v1/posts : GET all posts and POST to create a new post
+- /v1/posts/{:id} : GET a specific post and PATCH to update the post  
+
+- /v1/posts/{:id}/comments : GET all comments on post and POST to create a new comment  
+
+- /v1/posts/{:id}/comments/{:id} : PATCH Like/unlike a post  
+
+- /v1/profile/{:id} : GET a specific user profile and PATCH to update the profile  
+
 
 
 ### **SQL Database Schema**
