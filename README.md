@@ -35,36 +35,36 @@ USER {
     photoUrl varchar(255),  
 }
 
-POST {
-    id int not null auto_increment primary key,
-commentPostID int secondary key not null,
-userID int secondary key not null,
-    title varchar(128) not null,
-    description varchar(128) not null,
-    posted datetime not null,
-    updated datetime not null,
-    listingPrice int not null,
-}
+POST {  
+    id int not null auto_increment primary key,  
+commentPostID int secondary key not null,  
+userID int secondary key not null,  
+    title varchar(128) not null,  
+    description varchar(128) not null,  
+    posted datetime not null,  
+    updated datetime not null,  
+    listingPrice int not null,  
+}  
 
-COMMENT_POST {
-    id int not null auto_increment primary key,
-    postID int secondary key not null,
-    commentID int secondary key not null,
-}
+COMMENT_POST {  
+    id int not null auto_increment primary key,   
+    postID int secondary key not null,  
+    commentID int secondary key not null,  
+}  
 
-COMMENT_ID {
-    id int not null auto_increment primary key,
-    userID int secondary key not null,
-    message varchar(128) not null,
-    amountOfLikes int not null,
-}
+COMMENT_ID {  
+    id int not null auto_increment primary key,  
+    userID int secondary key not null,  
+    message varchar(128) not null,  
+    amountOfLikes int not null,  
+}  
 
-PROFILE {
-    id int not null auto_increment primary key,
-    userID int secondary key not null,
-    dateOfBirth datetime,
-    major varchar(64),
-    yearInSchool varchar(64),
-    description varchar(255),
-    bannerPhotoURL varchar(255)
-}
+PROFILE {  
+    id int not null auto_increment primary key,  
+    userID int secondary key not null,  
+    dateOfBirth datetime,  
+    major varchar(64),  
+    yearInSchool varchar(64),  
+    description varchar(255),  
+    bannerPhotoURL varchar(255)  
+}  
