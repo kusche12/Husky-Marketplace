@@ -24,8 +24,17 @@ Profile information would be stored on our **MySQL** database. Our **Go server**
 5. As a user, I want to update my profile information:  
 Profile information would be stored on our MySQL database. Our Go server would pass the updated information to the database.
 
+
+
 ### **Architectural Diagram**
 ![architectural diagram of system](https://github.com/kusche12/Husky-Marketplace/blob/main/arch%20diagram.png)
+
+
+
+### **Endpoints**
+- /v1/users : GET users and POST to create a new user
+- /v1/users/{:id} : GET specific user and PATCH to update user account info
+
 
 ### **SQL Database Schema**
 USER {  
